@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname,'pages')));
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname +"/pages/index.html");
+    res.sendFile(__dirname +"/dist/index.html");
 });
 
 app.post("/register", async (req, res) => {
