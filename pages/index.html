@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-compatible" content="IE=edge" />
+<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
+<title>Registration form</title>
+<style>
+    body{
+        font-family: 'Aerial', sans-serif ;
+        background-color: #EEEDED;
+        display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+    }
+    form{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0,0,10px rgba(0,0,0,0.1);
+        width:300px;
+    }
+    h1{
+        text-align: center;
+        color: #333;
+    }
+    input{
+        width:100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius:4px;
+    }
+</style>
+</head>
+<body>
+    <section class="text-center">
+            <h2>Registration Form</h2>
+
+            <form method="post" action="/register" style="text-align: left">
+                <div>
+                    <label>Name</label>
+                    <input type="text"  name="name"/>
+                </div>
+                
+                <div>
+                    <label>Email address</label>
+                    <input type="email"  name="email" />
+                </div>
+
+                <div>
+                    <label>Password</label>
+                    <input type="password"  name="password" />
+                </div>
+                <button type="submit" >Register</button>
+            </form>
+        </div>
+       </div>
+    </section>
+</body>
+</html>
